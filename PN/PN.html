@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembaga Bantuan Hukum Pengkajian Dan Analisis Judisial (LBH PANJI)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('1739885911504.jpg') no-repeat center bottom;
+    background-size: 24%;
+    opacity: 0.1; /* Sesuaikan tingkat transparansi */
+    z-index: -1;
+}
+
+        header {
+            background: rgba(0, 0, 0, 0.256);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li button {
+            background: linear-gradient(to right, rgb(112, 225, 149));
+            /* border: none; */
+            padding: 12px 18px;
+            cursor: pointer;
+            /* font-size: 18px; */
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        nav ul li button:hover {
+            background: #b9e0fd;
+            transform: scale(1.1);
+        }
+        .konten {
+            text-align: center;
+            padding: 60px;
+            background: rgba(115, 115, 115, 0.19);
+            margin: 30px auto;
+            /* width: 100%; */
+            border-radius: 12px;
+            /* height: 180%; */
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            display: none;
+        }
+        .konten img {
+    width: 60%; /* Atur lebar gambar agar lebih besar */
+    max-width: 50%; /* Agar tidak melebihi container */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Memastikan gambar tetap di tengah */
+}
+        .konten.aktif {
+            display: block;
+        }
+    
+        .konten p {
+    text-align: justify;
+    /* text-indent: 30px; Memberikan indentasi pada paragraf */
+    line-height: 1.6; /* Menambah jarak antar baris agar lebih nyaman dibaca */
+    color: black;
+}
+
+h2{
+    display: block;
+    color: rgb(54, 203, 109);
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#syarat {
+    /* background-color: #f8f9fa; Warna latar belakang */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    /* max-width: 800px; */
+    margin: 20px auto;
+}
+
+#syarat h2 {
+    color: #2c7a7b; /* Warna judul */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#syarat ul {
+    /* background-color: #ffffff; */
+    padding: 15px;
+    border-radius: 8px;
+    list-style: none; /* Menghapus default bullet */
+}
+
+#syarat ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+#profil {
+    /* background-color: #f8f9fa; Warna latar belakang */
+    padding: 25px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    /* max-width: 800px; */
+    margin: 30px auto;
+}
+
+#profil h2 {
+    color: #2c7a7b;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#profil h3 {
+    color: #1e4d4e;
+    font-size: 22px;
+    border-bottom: 2px solid #2c7a7b;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#profil p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#profil ul {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    list-style: none;
+}
+
+#profil ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+#profil p:last-child {
+    font-weight: bold;
+}
+
+#beranda {
+    /* background-color: #f8f9fa; Warna latar belakang */
+    padding: 25px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    /* max-width: 900px; */
+    margin: 30px auto;
+}
+
+#beranda h2 {
+    color: #2c7a7b;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#beranda p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify; /* Membuat teks rata kiri-kanan */
+    text-indent: 30px; /* Memberikan indentasi pada paragraf */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lembaga Bantuan Hukum Pengkajian Dan Analisis Judisial (LBH PANJI)</h1>
+        <nav>
+            <ul>
+                <li><button onclick="tampilkan('beranda')">Beranda</button></li>
+                <li><button onclick="tampilkan('profil')">Profil</button></li>
+                <li><button onclick="tampilkan('struktur')">Struktur</button></li>
+                <li><button onclick="tampilkan('dokumentasi')">Dokumentasi</button></li>
+                <li><button onclick="tampilkan('syarat')">Syarat</button></li>
+                <li><button onclick="tampilkan('alur')">Alur Pobakum</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="beranda" class="konten aktif">
+        <h2>SEJARAH</h2>
+        <p>
+            Lembaga Bantuan Hukum Pengkajian dan Analisis Judisial  yang selanjutnya disingkat LBH PANJI didirikan di Gowa pada Tanggal 13 Desember 2015 atas prakarsa beberapa orang aktivis yang memiliki kualifikasi keilmuan di bidang hukum. Walaupun berdiri dalam waktu yang relatif masih sangat baru akan tetapi beberapa orang aktivis yang berkecimpung di dalamnya telah lama berkecimpung dalam berbagai persoalan hukum di beberapa daerah di Sulawesi Selatan. Pada masa bergelut dengan berbagai persoalan hukum yang terjadi dimasyarakat selama ini beberapa orang yang terlibat dalam pembentukan lembaga ini melihat berbagai persoalan-persoalan hukum yang terjadi di masyarakat.  
+            Terdapat berbagai persoalan-persoalan yang terlihat dalam keterlibatan dengan masyarakat yang dialami oleh beberapa orang aktivis ini, semuanya bermuara pada beberapa sektor seperti permasalahan pendidikan hukum, ketidak harmonisan hubungan tenaga kerja dan pemilik usaha, kekerasan terhadap perempuan dan anak-anak, pemberantasan korupsi dan lain-lain. Inti dari berbagai persoalan yang bermuara pada sektor-sektor tersebut di atas mencoba untuk di cover oleh LBH PANJI yang nantinya akan menjadi divisi-divisi kerja yang menjadi fokus kerja utama dari LBH PANJI. Sehingga meng cover berbagai persoalan tersebut dan mengkonsentrasikan penyelesaiannya diharapkan akan meminimalisir berbagai persoalan-persoalan hukum yang bermuara padanya.
+            Dalam melakukan kegiatan, LBH PANJI memfokuskan pada pemberian bantuan hukum dalam berbagai bentuk seperti penyuluhan dan pembinaan hukum, konsultasi hukum, advokasi dan penguatan kesadaran hukum kepada masyarakat di tingkat bawah untuk terlibat dalam proses pembentukan kebijakan-kebijakan hukum pada berbagai level masyarakat di setiap tingkatan pemerintahan dan juga menfokuskan proses penyelesaian berbagai jenis konflik sosiologis dengan menggunakan kekuatan-kekuatan dialogis dan mediatif sehingga akan tercapai solusi yang menguntungkan berbagai pihak.
+            </p>
+    </section>
+
+    <section id="profil" class="konten">
+        <h2>Profil Pengadilan Negeri</h2>
+        <h3>Visi</h3>
+        <p>Terwujudnya kehidupan masyarakat yang adil dan makmur serta diridhoi oleh Allah Swt.
+            Dalam kerangka sistem hukum yang demokratis, berdaulat dan bermartabat</p>
+        <h3>Misi</h3>
+        <ul>
+            <li>Melakukan berbagai pengkajian secara sistemik dalam memahami berbagai konsepsi-konsepsi yang melatari sistem hukum yang ada yang dikaitkan dengan fenomena yang terjadi dalam masyarakat</li>
+            <li>Melakukan penyuluhan dan pembinaan hukum secara aktif dalam berbagai bentuk</li>
+            <li>Melakukan advokasi dan bantuan hukum kepada masyarakat kaitannya dengan berbagai kebijakan lintas sektoral</li>
+            <li>Melakukan berbagai pengawalan terhadap kebijakan-kebijakan yang menguntungkan dan berpihak kepada masyarakat secara umum</li>
+        </ul>
+        <h3>Kedudukan</h3>
+        <p>LBH PANJI berkedudukan di dalam wilayah Negara kesatuan Republik Indonesia</p>
+        <h3>Kontak Kantor LBH-Panji</h3>
+        <p>Email: lbhpanji@gmail.com </p>
+        <p>Instagram : lbh_panji015</p>
+        <p>Telepon: 085341342295/085246001319/085331271598/082347128235/082348528653/085299646849/085299333192/087877371302/085338563629
+            /085825292867</p>
+        <p>Alamat: BTN. Graha Matahari Permai B/02</p>
+    </section>
+
+
+    <section id="struktur" class="konten">
+        <h2>Struktur Organisasi</h2>
+        <img src="struktur organisasi lbh panji-1[1]_page-0001.jpg" alt="Struktur Organisasi">
+    </section>
+
+    <section id="dokumentasi" class="konten">
+        <h2>Dokumentasi Kegiatan</h2>
+        <img src="dokumentasi1.jpg" alt="Dokumentasi 1">
+        <img src="dokumentasi2.jpg" alt="Dokumentasi 2">
+    </section>
+
+    <section id="syarat" class="konten">
+        <h2>Syarat Dan Alur Pobakum</h2>
+        <h3>Permohonan Bantuan Hukum 
+            Bagi masyarakat yang tidak mampu, dengan</h3>
+        <ul>
+            <li>Surat Keterangan Tidak Mampu (SKTM) dari Kelurahan atau Kepala Desa, atau</li>
+            <li>Kartu Keluarga Miskin (KMM), atau Kartu Jaminan Kesehatan Masyarakat (Jamkesmas), atau Kartu Program Keluarga Harapan (PKH), atau Kartu Bantuan Langsung Tunai (BLT), atau</li>
+            <li>Surat Pernyataan Tidak Mampu yang dibuat dan ditandatangani Pemohon</li>
+        </ul>
+    </section>
+    <script>
+        function tampilkan(id) {
+            var sections = document.querySelectorAll('.konten');
+            sections.forEach(section => {
+                section.classList.remove('aktif');
+            });
+            document.getElementById(id).classList.add('aktif');
+        }
+    </script>
+</body>
+</html>
